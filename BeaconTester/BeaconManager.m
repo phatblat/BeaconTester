@@ -47,7 +47,7 @@
     if (self = [super init]) {
         if ([CLLocationManager isRangingAvailable]) {
             [self setupBeaconRegions];
-            [self startRanging];
+            [self startMonitoringRegions];
         } else {
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Device Not Compatible"
                                                                 message:@"This app requires a device which supports Bluetooth Low Energy."
@@ -136,16 +136,19 @@
 - (void)locationManager:(CLLocationManager *)manager didDetermineState:(CLRegionState)state forRegion:(CLRegion *)region
 {
     NSLog(@"Location manager state %@ for region: %@", [self stringWithRegionState:state], region);
+    [self didChangeState:[self stringWithRegionState:state] forRegion:(CLBeaconRegion *)region];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region
 {
     NSLog(@"Entered region %@", region);
+    [self didChangeState:@"Enter" forRegion:(CLBeaconRegion *)region];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region
 {
     NSLog(@"Exited region %@", region);
+    [self didChangeState:@"Exit" forRegion:(CLBeaconRegion *)region];
 }
 
 - (void)locationManager:(CLLocationManager *)manager monitoringDidFailForRegion:(CLRegion *)region withError:(NSError *)error
@@ -211,7 +214,32 @@
     }
 }
 
-#pragma mark - Beacon Handling
+#pragma mark - Region & Beacon Handling
+
+- (void)didChangeState:(NSString *)state forRegion:(CLBeaconRegion *)region
+{
+    NSMutableString *message = [[NSMutableString alloc] init];
+    [message appendFormat:@"%@ region %@", state, region];
+
+    if ([UIApplication sharedApplication].applicationState == UIApplicationStateBackground) {
+        // Local notifications
+
+        // Clear out all local notifications so they don't queue up in notification center
+        [[UIApplication sharedApplication] cancelAllLocalNotifications];
+
+        UILocalNotification *notification = [[UILocalNotification alloc] init];
+        notification.fireDate = [NSDate date];
+        notification.timeZone = [NSTimeZone defaultTimeZone];
+        notification.alertBody = message;
+        notification.userInfo = @{ @"notification" : @"contracted" };
+        [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+    } else {
+        // Present alert
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:message
+                                                           delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [self presentAlert:alertView];
+    }
+}
 
 - (void)didDetectBeacons:(NSArray *)beacons
 {
