@@ -215,6 +215,10 @@
 
 - (void)didDetectBeacons:(NSArray *)beacons
 {
+    if ([beacons count] == 0) {
+        return;
+    }
+
     NSMutableString *message = [[NSMutableString alloc] init];
     [message appendFormat:@"%ld beacons detected", (long)[beacons count]];
 
