@@ -9,14 +9,26 @@
 #import "BeaconManager.h"
 #import "CLBeacon+DictionaryRepresentation.h"
 
+@import UIKit.UIAlertView;
+@import UIKit.UIApplication;
+@import UIKit.UILocalNotification;
+
 @interface BeaconManager ()
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) NSMutableArray *beaconRegions;
+@property (strong, nonatomic) UIAlertView *alertView;
 
 @end
 
 @implementation BeaconManager
+
+#pragma mark - NSObject
+
++ (void)load
+{
+    [self sharedManager];
+}
 
 #pragma mark - Init
 
@@ -40,7 +52,7 @@
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Device Not Compatible"
                                                                 message:@"This app requires a device which supports Bluetooth Low Energy."
                                                                delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-            [alertView show];
+            [self presentAlert:alertView];
         }
     }
     return self;
@@ -150,10 +162,7 @@
  */
 - (void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region
 {
-    [beacons enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        NSLog(@"\n\nBeacon #%ld", (long)idx);
-        [self debugBeacon:obj];
-    }];
+    [self didDetectBeacons:beacons];
 }
 
 #pragma mark - Enum Translation
@@ -200,6 +209,50 @@
         default:
             break;
     }
+}
+
+#pragma mark - Beacon Handling
+
+- (void)didDetectBeacons:(NSArray *)beacons
+{
+    NSMutableString *message = [[NSMutableString alloc] init];
+    [message appendFormat:@"%ld beacons detected", (long)[beacons count]];
+
+    [beacons enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        NSLog(@"\n\nBeacon #%ld", (long)idx);
+        [self debugBeacon:obj];
+    }];
+
+    if ([UIApplication sharedApplication].applicationState == UIApplicationStateBackground) {
+        // Local notifications
+
+        // Clear out all local notifications so they don't queue up in notification center
+        [[UIApplication sharedApplication] cancelAllLocalNotifications];
+
+        UILocalNotification *notification = [[UILocalNotification alloc] init];
+        notification.fireDate = [NSDate date];
+        notification.timeZone = [NSTimeZone defaultTimeZone];
+        notification.alertBody = message;
+        notification.userInfo = @{ @"notification" : @"contracted" };
+        [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+    } else {
+        // Present alert
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:message
+                                                           delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [self presentAlert:alertView];
+    }
+}
+
+#pragma mark - UIAlert Management
+
+- (void)presentAlert:(UIAlertView *)alertView
+{
+    if (self.alertView) {
+        [self.alertView dismissWithClickedButtonIndex:0 animated:YES];
+    }
+
+    self.alertView = alertView;
+    [self.alertView show];
 }
 
 #pragma mark - Debugging
