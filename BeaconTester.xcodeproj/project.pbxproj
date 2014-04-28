@@ -12,7 +12,7 @@
 		B5D863D3190EABB0005657B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D863D2190EABB0005657B4 /* UIKit.framework */; };
 		B5D863D9190EABB0005657B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5D863D7190EABB0005657B4 /* InfoPlist.strings */; };
 		B5D863DB190EABB0005657B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D863DA190EABB0005657B4 /* main.m */; };
-		B5D863DF190EABB0005657B4 /* KPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D863DE190EABB0005657B4 /* KPAppDelegate.m */; };
+		B5D863DF190EABB0005657B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D863DE190EABB0005657B4 /* AppDelegate.m */; };
 		B5D863E2190EABB0005657B4 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D863E0190EABB0005657B4 /* Main_iPhone.storyboard */; };
 		B5D863E5190EABB0005657B4 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D863E3190EABB0005657B4 /* Main_iPad.storyboard */; };
 		B5D863E8190EABB0005657B4 /* KPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D863E7190EABB0005657B4 /* KPViewController.m */; };
@@ -22,6 +22,8 @@
 		B5D863F3190EABB0005657B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D863D2190EABB0005657B4 /* UIKit.framework */; };
 		B5D863FB190EABB0005657B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5D863F9190EABB0005657B4 /* InfoPlist.strings */; };
 		B5D863FD190EABB0005657B4 /* BeaconTesterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D863FC190EABB0005657B4 /* BeaconTesterTests.m */; };
+		B5D86408190EAD8C005657B4 /* BeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D86407190EAD8C005657B4 /* BeaconManager.m */; };
+		B5D8640B190EAE2D005657B4 /* CLBeacon+DictionaryRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D8640A190EAE2D005657B4 /* CLBeacon+DictionaryRepresentation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +45,8 @@
 		B5D863D8190EABB0005657B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B5D863DA190EABB0005657B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B5D863DC190EABB0005657B4 /* BeaconTester-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeaconTester-Prefix.pch"; sourceTree = "<group>"; };
-		B5D863DD190EABB0005657B4 /* KPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPAppDelegate.h; sourceTree = "<group>"; };
-		B5D863DE190EABB0005657B4 /* KPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPAppDelegate.m; sourceTree = "<group>"; };
+		B5D863DD190EABB0005657B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B5D863DE190EABB0005657B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B5D863E1190EABB0005657B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		B5D863E4190EABB0005657B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		B5D863E6190EABB0005657B4 /* KPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPViewController.h; sourceTree = "<group>"; };
@@ -55,6 +57,10 @@
 		B5D863F8190EABB0005657B4 /* BeaconTesterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeaconTesterTests-Info.plist"; sourceTree = "<group>"; };
 		B5D863FA190EABB0005657B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B5D863FC190EABB0005657B4 /* BeaconTesterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconTesterTests.m; sourceTree = "<group>"; };
+		B5D86406190EAD8C005657B4 /* BeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconManager.h; sourceTree = "<group>"; };
+		B5D86407190EAD8C005657B4 /* BeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconManager.m; sourceTree = "<group>"; };
+		B5D86409190EAE2D005657B4 /* CLBeacon+DictionaryRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLBeacon+DictionaryRepresentation.h"; sourceTree = "<group>"; };
+		B5D8640A190EAE2D005657B4 /* CLBeacon+DictionaryRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLBeacon+DictionaryRepresentation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,13 +120,17 @@
 		B5D863D4190EABB0005657B4 /* BeaconTester */ = {
 			isa = PBXGroup;
 			children = (
-				B5D863DD190EABB0005657B4 /* KPAppDelegate.h */,
-				B5D863DE190EABB0005657B4 /* KPAppDelegate.m */,
-				B5D863E0190EABB0005657B4 /* Main_iPhone.storyboard */,
-				B5D863E3190EABB0005657B4 /* Main_iPad.storyboard */,
+				B5D863DD190EABB0005657B4 /* AppDelegate.h */,
+				B5D863DE190EABB0005657B4 /* AppDelegate.m */,
+				B5D86406190EAD8C005657B4 /* BeaconManager.h */,
+				B5D86407190EAD8C005657B4 /* BeaconManager.m */,
+				B5D86409190EAE2D005657B4 /* CLBeacon+DictionaryRepresentation.h */,
+				B5D8640A190EAE2D005657B4 /* CLBeacon+DictionaryRepresentation.m */,
+				B5D863E9190EABB0005657B4 /* Images.xcassets */,
 				B5D863E6190EABB0005657B4 /* KPViewController.h */,
 				B5D863E7190EABB0005657B4 /* KPViewController.m */,
-				B5D863E9190EABB0005657B4 /* Images.xcassets */,
+				B5D863E3190EABB0005657B4 /* Main_iPad.storyboard */,
+				B5D863E0190EABB0005657B4 /* Main_iPhone.storyboard */,
 				B5D863D5190EABB0005657B4 /* Supporting Files */,
 			);
 			path = BeaconTester;
@@ -254,9 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D8640B190EAE2D005657B4 /* CLBeacon+DictionaryRepresentation.m in Sources */,
 				B5D863E8190EABB0005657B4 /* KPViewController.m in Sources */,
 				B5D863DB190EABB0005657B4 /* main.m in Sources */,
-				B5D863DF190EABB0005657B4 /* KPAppDelegate.m in Sources */,
+				B5D86408190EAD8C005657B4 /* BeaconManager.m in Sources */,
+				B5D863DF190EABB0005657B4 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,14 +1,14 @@
 //
-//  KPAppDelegate.m
+//  AppDelegate.m
 //  BeaconTester
 //
 //  Created by Ben Chatelain on 4/28/14.
 //  Copyright (c) 2014 Kaiser Permanente. All rights reserved.
 //
 
-#import "KPAppDelegate.h"
+#import "AppDelegate.h"
 
-@implementation KPAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
