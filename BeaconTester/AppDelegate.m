@@ -8,11 +8,63 @@
 
 #import "AppDelegate.h"
 
+//
+// Private notification API usage
+//
+// http://stackoverflow.com/questions/14229955/is-there-a-way-to-check-if-the-ios-device-is-locked-unlocked#answer-14271472
+// http://stackoverflow.com/questions/14352228/is-there-a-away-to-detect-the-event-when-ios-device-goes-to-sleep-mode-when-the#answer-14357568
+//
+static void displayStatusChanged(CFNotificationCenterRef center, void *observer, CFStringRef name, const void *object, CFDictionaryRef userInfo)
+{
+    NSString *notifcationName = (__bridge NSString *)name;
+    NSLog(@"Darwin notification NAME = %@",name);
+
+    if ([notifcationName isEqualToString:@"com.apple.springboard.lockstate"]) {
+        NSLog(@"LOCK STATUS CHANGED");
+    }
+    else if ([notifcationName isEqualToString:@"com.apple.springboard.lockcomplete"]) {
+        // the "com.apple.springboard.lockcomplete" notification will always come after the "com.apple.springboard.lockstate" notification
+        NSLog(@"DEVICE LOCKED");
+    }
+    else if ([notifcationName isEqualToString:@"com.apple.springboard.hasBlankedScreen"]) {
+        NSLog(@"screen has either gone dark, or been turned back on!");
+    }
+}
+
 @implementation AppDelegate
+
+#pragma mark - Private Methods
+
+- (void)registerforDeviceLockNotifications
+{
+    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), //center
+                                    NULL, // observer
+                                    displayStatusChanged, // callback
+                                    CFSTR("com.apple.springboard.lockstate"), // event name
+                                    NULL, // object
+                                    CFNotificationSuspensionBehaviorDeliverImmediately);
+
+    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), //center
+                                    NULL, // observer
+                                    displayStatusChanged, // callback
+                                    CFSTR("com.apple.springboard.lockcomplete"), // event name
+                                    NULL, // object
+                                    CFNotificationSuspensionBehaviorDeliverImmediately);
+
+    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), //center
+                                    NULL, // observer
+                                    displayStatusChanged, // callback
+                                    CFSTR("com.apple.springboard.hasBlankedScreen"), // event name
+                                    NULL, // object
+                                    CFNotificationSuspensionBehaviorDeliverImmediately);
+}
+
+#pragma mark - UIApplicationDelegate Protocol
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [self registerforDeviceLockNotifications];
+
     return YES;
 }
 							
