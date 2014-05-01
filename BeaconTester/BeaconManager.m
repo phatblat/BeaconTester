@@ -221,23 +221,11 @@
     NSMutableString *message = [[NSMutableString alloc] init];
     [message appendFormat:@"%@ region %@", state, region];
 
-    if ([UIApplication sharedApplication].applicationState == UIApplicationStateBackground) {
-        // Local notifications
 
-        // Clear out all local notifications so they don't queue up in notification center
-        [[UIApplication sharedApplication] cancelAllLocalNotifications];
-
-        UILocalNotification *notification = [[UILocalNotification alloc] init];
-        notification.fireDate = [NSDate date];
-        notification.timeZone = [NSTimeZone defaultTimeZone];
-        notification.alertBody = message;
-        notification.userInfo = @{ @"notification" : @"contracted" };
-        [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
-    } else {
-        // Present alert
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:message
-                                                           delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        [self presentAlert:alertView];
+    if ([state isEqualToString:@"Enter"] || [state isEqualToString:@"Inside"]) {
+        [self.locationManager startRangingBeaconsInRegion:region];
+    } else if ([state isEqualToString:@"Exit"] || [state isEqualToString:@"Outside"]) {
+        [self.locationManager stopRangingBeaconsInRegion:region];
     }
 }
 
