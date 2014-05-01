@@ -257,10 +257,6 @@
 
     if ([UIApplication sharedApplication].applicationState == UIApplicationStateBackground) {
         // Local notifications
-
-        // Clear out all local notifications so they don't queue up in notification center
-        [[UIApplication sharedApplication] cancelAllLocalNotifications];
-
         UILocalNotification *notification = [[UILocalNotification alloc] init];
         notification.fireDate = [NSDate date];
         notification.timeZone = [NSTimeZone defaultTimeZone];
