@@ -224,8 +224,10 @@
 
     if ([state isEqualToString:@"Enter"] || [state isEqualToString:@"Inside"]) {
         [self.locationManager startRangingBeaconsInRegion:region];
+        NSLog(@"%@ region, START ranging for beacons", state);
     } else if ([state isEqualToString:@"Exit"] || [state isEqualToString:@"Outside"]) {
         [self.locationManager stopRangingBeaconsInRegion:region];
+        NSLog(@"%@ region, STOP ranging for beacons", state);
     }
 }
 
