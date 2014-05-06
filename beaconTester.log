@@ -1,0 +1,1272 @@
+2014-05-05 20:21:55.679 BeaconTester[614:60b] __35-[BeaconManager setupBeaconRegions]_block_invoke Added beacon region: CLBeaconRegion (identifier:'E2C56DB5-DFFB-48D2-B060-D0F5A71096E0', uuid:<__NSConcreteUUID 0x17003c220> E2C56DB5-DFFB-48D2-B060-D0F5A71096E0, major:(null), minor:(null))
+2014-05-05 20:21:55.681 BeaconTester[614:60b] __35-[BeaconManager setupBeaconRegions]_block_invoke Added beacon region: CLBeaconRegion (identifier:'5A4BCFCE-174E-4BAC-A814-092E77F6B7E5', uuid:<__NSConcreteUUID 0x17003c280> 5A4BCFCE-174E-4BAC-A814-092E77F6B7E5, major:(null), minor:(null))
+2014-05-05 20:21:55.682 BeaconTester[614:60b] __35-[BeaconManager setupBeaconRegions]_block_invoke Added beacon region: CLBeaconRegion (identifier:'74278BDA-B644-4520-8F0C-720EAF059935', uuid:<__NSConcreteUUID 0x17003c2a0> 74278BDA-B644-4520-8F0C-720EAF059935, major:(null), minor:(null))
+2014-05-05 20:21:55.684 BeaconTester[614:60b] __35-[BeaconManager setupBeaconRegions]_block_invoke Added beacon region: CLBeaconRegion (identifier:'8AEFB031-6C32-486F-825B-E26FA193487D', uuid:<__NSConcreteUUID 0x17003c2c0> 8AEFB031-6C32-486F-825B-E26FA193487D, major:(null), minor:(null))
+2014-05-05 20:21:55.684 BeaconTester[614:60b] __35-[BeaconManager setupBeaconRegions]_block_invoke Added beacon region: CLBeaconRegion (identifier:'4C56C69A-D494-4DEE-AEFE-7E064803ECEE', uuid:<__NSConcreteUUID 0x17003c2e0> 4C56C69A-D494-4DEE-AEFE-7E064803ECEE, major:(null), minor:(null))
+2014-05-05 20:21:55.685 BeaconTester[614:60b] __35-[BeaconManager setupBeaconRegions]_block_invoke Added beacon region: CLBeaconRegion (identifier:'C75581A3-D1C6-4648-A9AC-F8F85F361D54', uuid:<__NSConcreteUUID 0x17003c300> C75581A3-D1C6-4648-A9AC-F8F85F361D54, major:(null), minor:(null))
+2014-05-05 20:21:55.686 BeaconTester[614:60b] __35-[BeaconManager setupBeaconRegions]_block_invoke Added beacon region: CLBeaconRegion (identifier:'76630532-774C-4641-BA52-E854107E4ADD', uuid:<__NSConcreteUUID 0x17003c320> 76630532-774C-4641-BA52-E854107E4ADD, major:(null), minor:(null))
+2014-05-05 20:21:55.688 BeaconTester[614:60b] __35-[BeaconManager setupBeaconRegions]_block_invoke Added beacon region: CLBeaconRegion (identifier:'DDBFBA71-9C58-4B5F-BE23-E5FDEEF11EF4', uuid:<__NSConcreteUUID 0x17003c340> DDBFBA71-9C58-4B5F-BE23-E5FDEEF11EF4, major:(null), minor:(null))
+2014-05-05 20:21:55.689 BeaconTester[614:60b] __35-[BeaconManager setupBeaconRegions]_block_invoke Added beacon region: CLBeaconRegion (identifier:'B9407F30-F5F8-466E-AFF9-25556B57FE6D', uuid:<__NSConcreteUUID 0x17003c360> B9407F30-F5F8-466E-AFF9-25556B57FE6D, major:(null), minor:(null))
+2014-05-05 20:21:55.815 BeaconTester[614:60b] -[BeaconManager locationManager:didDetermineState:forRegion:] Location manager state Inside for region: CLBeaconRegion (identifier:'B9407F30-F5F8-466E-AFF9-25556B57FE6D', uuid:<__NSConcreteUUID 0x178039e60> B9407F30-F5F8-466E-AFF9-25556B57FE6D, major:(null), minor:(null))
+2014-05-05 20:21:55.817 BeaconTester[614:60b] -[BeaconManager didChangeState:forRegion:] Inside region, START ranging for beacons
+2014-05-05 20:21:55.819 BeaconTester[614:60b] -[BeaconManager locationManager:didDetermineState:forRegion:] Location manager state Inside for region: CLBeaconRegion (identifier:'B9407F30-F5F8-466E-AFF9-25556B57FE6D', uuid:<__NSConcreteUUID 0x170222d00> B9407F30-F5F8-466E-AFF9-25556B57FE6D, major:(null), minor:(null))
+2014-05-05 20:21:55.823 BeaconTester[614:60b] -[BeaconManager didChangeState:forRegion:] Inside region, START ranging for beacons
+2014-05-05 20:21:55.950 BeaconTester[614:60b] -[BeaconManager locationManager:didStartMonitoringForRegion:] Monitoring started for region CLBeaconRegion (identifier:'E2C56DB5-DFFB-48D2-B060-D0F5A71096E0', uuid:<__NSConcreteUUID 0x178039e20> E2C56DB5-DFFB-48D2-B060-D0F5A71096E0, major:(null), minor:(null))
+2014-05-05 20:21:55.951 BeaconTester[614:60b] -[BeaconManager locationManager:didStartMonitoringForRegion:] Monitoring started for region CLBeaconRegion (identifier:'5A4BCFCE-174E-4BAC-A814-092E77F6B7E5', uuid:<__NSConcreteUUID 0x178039e20> 5A4BCFCE-174E-4BAC-A814-092E77F6B7E5, major:(null), minor:(null))
+2014-05-05 20:21:55.953 BeaconTester[614:60b] -[BeaconManager locationManager:didStartMonitoringForRegion:] Monitoring started for region CLBeaconRegion (identifier:'74278BDA-B644-4520-8F0C-720EAF059935', uuid:<__NSConcreteUUID 0x170222d40> 74278BDA-B644-4520-8F0C-720EAF059935, major:(null), minor:(null))
+2014-05-05 20:21:55.955 BeaconTester[614:60b] -[BeaconManager locationManager:didStartMonitoringForRegion:] Monitoring started for region CLBeaconRegion (identifier:'8AEFB031-6C32-486F-825B-E26FA193487D', uuid:<__NSConcreteUUID 0x170222d40> 8AEFB031-6C32-486F-825B-E26FA193487D, major:(null), minor:(null))
+2014-05-05 20:21:55.956 BeaconTester[614:60b] -[BeaconManager locationManager:didStartMonitoringForRegion:] Monitoring started for region CLBeaconRegion (identifier:'4C56C69A-D494-4DEE-AEFE-7E064803ECEE', uuid:<__NSConcreteUUID 0x178039e20> 4C56C69A-D494-4DEE-AEFE-7E064803ECEE, major:(null), minor:(null))
+2014-05-05 20:21:55.957 BeaconTester[614:60b] -[BeaconManager locationManager:didStartMonitoringForRegion:] Monitoring started for region CLBeaconRegion (identifier:'C75581A3-D1C6-4648-A9AC-F8F85F361D54', uuid:<__NSConcreteUUID 0x170222e00> C75581A3-D1C6-4648-A9AC-F8F85F361D54, major:(null), minor:(null))
+2014-05-05 20:21:55.958 BeaconTester[614:60b] -[BeaconManager locationManager:didStartMonitoringForRegion:] Monitoring started for region CLBeaconRegion (identifier:'76630532-774C-4641-BA52-E854107E4ADD', uuid:<__NSConcreteUUID 0x178039e20> 76630532-774C-4641-BA52-E854107E4ADD, major:(null), minor:(null))
+2014-05-05 20:21:55.959 BeaconTester[614:60b] -[BeaconManager locationManager:didStartMonitoringForRegion:] Monitoring started for region CLBeaconRegion (identifier:'DDBFBA71-9C58-4B5F-BE23-E5FDEEF11EF4', uuid:<__NSConcreteUUID 0x178039e20> DDBFBA71-9C58-4B5F-BE23-E5FDEEF11EF4, major:(null), minor:(null))
+2014-05-05 20:21:55.960 BeaconTester[614:60b] -[BeaconManager locationManager:didStartMonitoringForRegion:] Monitoring started for region CLBeaconRegion (identifier:'B9407F30-F5F8-466E-AFF9-25556B57FE6D', uuid:<__NSConcreteUUID 0x178039e20> B9407F30-F5F8-466E-AFF9-25556B57FE6D, major:(null), minor:(null))
+2014-05-05 20:21:55.961 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:21:55.962 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Unknown
+accuracy: -1.000000
+rssi: 0
+2014-05-05 20:21:55.963 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:21:55.963 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Unknown
+accuracy: -1.000000
+rssi: 0
+2014-05-05 20:21:56.079 BeaconTester[614:60b] -[BeaconManager locationManager:didDetermineState:forRegion:] Location manager state Inside for region: CLBeaconRegion (identifier:'B9407F30-F5F8-466E-AFF9-25556B57FE6D', uuid:<__NSConcreteUUID 0x1782213e0> B9407F30-F5F8-466E-AFF9-25556B57FE6D, major:(null), minor:(null))
+2014-05-05 20:21:56.080 BeaconTester[614:60b] -[BeaconManager didChangeState:forRegion:] Inside region, START ranging for beacons
+2014-05-05 20:21:57.084 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:21:57.085 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 2.860259
+rssi: -82
+2014-05-05 20:21:57.086 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:21:57.087 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 3.856115
+rssi: -87
+2014-05-05 20:21:58.085 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:21:58.086 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 2.559268
+rssi: -80
+2014-05-05 20:21:58.086 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:21:58.087 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 3.354520
+rssi: -82
+2014-05-05 20:21:59.023 BeaconTester[614:60b] -[BeaconManager locationManager:didDetermineState:forRegion:] Location manager state Outside for region: CLBeaconRegion (identifier:'E2C56DB5-DFFB-48D2-B060-D0F5A71096E0', uuid:<__NSConcreteUUID 0x178222500> E2C56DB5-DFFB-48D2-B060-D0F5A71096E0, major:(null), minor:(null))
+2014-05-05 20:21:59.024 BeaconTester[614:60b] -[BeaconManager didChangeState:forRegion:] Outside region, STOP ranging for beacons
+2014-05-05 20:21:59.027 BeaconTester[614:60b] -[BeaconManager locationManager:didDetermineState:forRegion:] Location manager state Outside for region: CLBeaconRegion (identifier:'5A4BCFCE-174E-4BAC-A814-092E77F6B7E5', uuid:<__NSConcreteUUID 0x1702256a0> 5A4BCFCE-174E-4BAC-A814-092E77F6B7E5, major:(null), minor:(null))
+2014-05-05 20:21:59.028 BeaconTester[614:60b] -[BeaconManager didChangeState:forRegion:] Outside region, STOP ranging for beacons
+2014-05-05 20:21:59.030 BeaconTester[614:60b] -[BeaconManager locationManager:didDetermineState:forRegion:] Location manager state Outside for region: CLBeaconRegion (identifier:'74278BDA-B644-4520-8F0C-720EAF059935', uuid:<__NSConcreteUUID 0x178224760> 74278BDA-B644-4520-8F0C-720EAF059935, major:(null), minor:(null))
+2014-05-05 20:21:59.031 BeaconTester[614:60b] -[BeaconManager didChangeState:forRegion:] Outside region, STOP ranging for beacons
+2014-05-05 20:21:59.032 BeaconTester[614:60b] -[BeaconManager locationManager:didDetermineState:forRegion:] Location manager state Outside for region: CLBeaconRegion (identifier:'8AEFB031-6C32-486F-825B-E26FA193487D', uuid:<__NSConcreteUUID 0x170225080> 8AEFB031-6C32-486F-825B-E26FA193487D, major:(null), minor:(null))
+2014-05-05 20:21:59.034 BeaconTester[614:60b] -[BeaconManager didChangeState:forRegion:] Outside region, STOP ranging for beacons
+2014-05-05 20:21:59.035 BeaconTester[614:60b] -[BeaconManager locationManager:didDetermineState:forRegion:] Location manager state Outside for region: CLBeaconRegion (identifier:'4C56C69A-D494-4DEE-AEFE-7E064803ECEE', uuid:<__NSConcreteUUID 0x1702256a0> 4C56C69A-D494-4DEE-AEFE-7E064803ECEE, major:(null), minor:(null))
+2014-05-05 20:21:59.037 BeaconTester[614:60b] -[BeaconManager didChangeState:forRegion:] Outside region, STOP ranging for beacons
+2014-05-05 20:21:59.038 BeaconTester[614:60b] -[BeaconManager locationManager:didDetermineState:forRegion:] Location manager state Outside for region: CLBeaconRegion (identifier:'C75581A3-D1C6-4648-A9AC-F8F85F361D54', uuid:<__NSConcreteUUID 0x170225580> C75581A3-D1C6-4648-A9AC-F8F85F361D54, major:(null), minor:(null))
+2014-05-05 20:21:59.039 BeaconTester[614:60b] -[BeaconManager didChangeState:forRegion:] Outside region, STOP ranging for beacons
+2014-05-05 20:21:59.041 BeaconTester[614:60b] -[BeaconManager locationManager:didDetermineState:forRegion:] Location manager state Outside for region: CLBeaconRegion (identifier:'76630532-774C-4641-BA52-E854107E4ADD', uuid:<__NSConcreteUUID 0x178224760> 76630532-774C-4641-BA52-E854107E4ADD, major:(null), minor:(null))
+2014-05-05 20:21:59.042 BeaconTester[614:60b] -[BeaconManager didChangeState:forRegion:] Outside region, STOP ranging for beacons
+2014-05-05 20:21:59.043 BeaconTester[614:60b] -[BeaconManager locationManager:didDetermineState:forRegion:] Location manager state Outside for region: CLBeaconRegion (identifier:'DDBFBA71-9C58-4B5F-BE23-E5FDEEF11EF4', uuid:<__NSConcreteUUID 0x178223600> DDBFBA71-9C58-4B5F-BE23-E5FDEEF11EF4, major:(null), minor:(null))
+2014-05-05 20:21:59.044 BeaconTester[614:60b] -[BeaconManager didChangeState:forRegion:] Outside region, STOP ranging for beacons
+2014-05-05 20:21:59.045 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:21:59.046 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Near
+accuracy: 2.528334
+rssi: -81
+2014-05-05 20:21:59.047 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:21:59.047 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 3.167829
+rssi: -82
+2014-05-05 20:21:59.051 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:21:59.051 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Near
+accuracy: 2.510576
+rssi: -81
+2014-05-05 20:21:59.055 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:21:59.057 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 3.070921
+rssi: -82
+2014-05-05 20:21:59.061 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:21:59.062 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Near
+accuracy: 2.499276
+rssi: -81
+2014-05-05 20:21:59.063 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:21:59.063 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 3.012965
+rssi: -82
+2014-05-05 20:21:59.068 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:21:59.068 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Near
+accuracy: 2.491454
+rssi: -81
+2014-05-05 20:21:59.069 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:21:59.070 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.974407
+rssi: -82
+2014-05-05 20:21:59.074 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:21:59.075 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Near
+accuracy: 2.485718
+rssi: -81
+2014-05-05 20:21:59.076 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:21:59.077 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.946904
+rssi: -82
+2014-05-05 20:21:59.080 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:21:59.080 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Near
+accuracy: 2.481331
+rssi: -81
+2014-05-05 20:21:59.081 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:21:59.082 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.926298
+rssi: -82
+2014-05-05 20:21:59.084 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:21:59.085 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Near
+accuracy: 2.477868
+rssi: -81
+2014-05-05 20:21:59.085 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:21:59.086 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.910283
+rssi: -82
+2014-05-05 20:22:00.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:00.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Near
+accuracy: 2.591702
+rssi: -86
+2014-05-05 20:22:00.065 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:00.066 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.932782
+rssi: -83
+2014-05-05 20:22:01.063 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:01.064 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Near
+accuracy: 2.635291
+rssi: -83
+2014-05-05 20:22:01.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:01.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.952675
+rssi: -83
+2014-05-05 20:22:02.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:02.064 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Near
+accuracy: 2.617413
+rssi: -81
+2014-05-05 20:22:02.065 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:02.066 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 3.052500
+rssi: -86
+2014-05-05 20:22:03.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:03.064 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Near
+accuracy: 2.568965
+rssi: -80
+2014-05-05 20:22:03.065 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:03.066 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.988161
+rssi: -81
+2014-05-05 20:22:04.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:04.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Near
+accuracy: 2.688108
+rssi: -87
+2014-05-05 20:22:04.066 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:04.067 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.933077
+rssi: -81
+2014-05-05 20:22:05.063 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:05.064 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Near
+accuracy: 2.805052
+rssi: -87
+2014-05-05 20:22:05.065 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:05.066 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.950946
+rssi: -83
+2014-05-05 20:22:06.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:06.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Near
+accuracy: 2.901024
+rssi: -86
+2014-05-05 20:22:06.066 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:06.066 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.967230
+rssi: -83
+2014-05-05 20:22:07.063 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:07.064 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Near
+accuracy: 2.890898
+rssi: -82
+2014-05-05 20:22:07.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:07.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 3.034372
+rssi: -85
+2014-05-05 20:22:08.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:08.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Near
+accuracy: 2.772776
+rssi: -79
+2014-05-05 20:22:08.066 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:08.067 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.938653
+rssi: -80
+2014-05-05 20:22:09.063 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:09.064 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 2.773561
+rssi: -82
+2014-05-05 20:22:09.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:09.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.856562
+rssi: -80
+2014-05-05 20:22:10.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:10.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 2.882666
+rssi: -87
+2014-05-05 20:22:10.065 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:10.066 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.903253
+rssi: -84
+2014-05-05 20:22:11.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:11.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 2.928505
+rssi: -84
+2014-05-05 20:22:11.066 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:11.066 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.947349
+rssi: -84
+2014-05-05 20:22:12.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:12.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.734247
+rssi: -77
+2014-05-05 20:22:12.065 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:12.066 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 2.764713
+rssi: -78
+2014-05-05 20:22:13.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:13.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Near
+accuracy: 2.629668
+rssi: -78
+2014-05-05 20:22:13.065 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:13.066 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.563386
+rssi: -77
+2014-05-05 20:22:14.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:14.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Near
+accuracy: 2.736927
+rssi: -87
+2014-05-05 20:22:14.065 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:14.066 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.526196
+rssi: -80
+2014-05-05 20:22:15.063 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:15.064 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Near
+accuracy: 2.827367
+rssi: -86
+2014-05-05 20:22:15.065 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:15.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.492687
+rssi: -80
+2014-05-05 20:22:16.063 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:16.064 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Near
+accuracy: 2.489166
+rssi: -81
+2014-05-05 20:22:16.065 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:16.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 2.793813
+rssi: -81
+2014-05-05 20:22:17.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:17.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Near
+accuracy: 2.509966
+rssi: -82
+2014-05-05 20:22:17.066 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:17.066 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 2.695022
+rssi: -79
+2014-05-05 20:22:18.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:18.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Near
+accuracy: 2.651212
+rssi: -90
+2014-05-05 20:22:18.066 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:18.066 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 2.674180
+rssi: -81
+2014-05-05 20:22:19.063 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:19.064 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Near
+accuracy: 2.603954
+rssi: -80
+2014-05-05 20:22:19.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:19.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 2.764928
+rssi: -86
+2014-05-05 20:22:20.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:20.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.561890
+rssi: -80
+2014-05-05 20:22:20.065 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:20.066 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 2.870481
+rssi: -87
+2014-05-05 20:22:21.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:21.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Near
+accuracy: 2.552570
+rssi: -81
+2014-05-05 20:22:21.065 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:21.066 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 2.937676
+rssi: -85
+2014-05-05 20:22:22.063 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:22.064 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Near
+accuracy: 2.569325
+rssi: -82
+2014-05-05 20:22:22.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:22.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 2.979329
+rssi: -84
+2014-05-05 20:22:23.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:23.064 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Near
+accuracy: 2.584960
+rssi: -82
+2014-05-05 20:22:23.065 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:23.066 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 2.894912
+rssi: -80
+2014-05-05 20:22:24.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:24.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.599534
+rssi: -82
+2014-05-05 20:22:24.066 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:24.067 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 2.938323
+rssi: -84
+2014-05-05 20:22:25.063 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:25.064 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.732918
+rssi: -89
+2014-05-05 20:22:25.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:25.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 3.022306
+rssi: -86
+2014-05-05 20:22:26.063 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:26.064 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.867917
+rssi: -89
+2014-05-05 20:22:26.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:26.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 3.002809
+rssi: -82
+2014-05-05 20:22:27.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:27.064 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.795620
+rssi: -80
+2014-05-05 20:22:27.065 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:27.066 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 2.876663
+rssi: -79
+2014-05-05 20:22:28.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:28.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.696056
+rssi: -79
+2014-05-05 20:22:28.065 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:28.066 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 2.769073
+rssi: -79
+2014-05-05 20:22:29.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:29.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.644377
+rssi: -80
+2014-05-05 20:22:29.065 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:29.066 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 2.795239
+rssi: -83
+2014-05-05 20:22:30.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:30.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.654632
+rssi: -82
+2014-05-05 20:22:30.065 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:30.066 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 2.819915
+rssi: -83
+2014-05-05 20:22:31.064 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:22:31.065 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 2.746111
+rssi: -86
+2014-05-05 20:22:31.065 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:22:31.066 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 2.817062
+rssi: -82
+2014-05-05 20:22:31.464 BeaconTester[614:6617] __49-[AppDelegate registerforDeviceLockNotifications]_block_invoke ********************* DISPLAY OFF *********************
+2014-05-05 20:23:35.294 BeaconTester[614:5d17] __49-[AppDelegate registerforDeviceLockNotifications]_block_invoke ********************* DISPLAY ON *********************
+2014-05-05 20:23:35.333 BeaconTester[614:60b] -[BeaconManager locationManager:didDetermineState:forRegion:] Location manager state Inside for region: CLBeaconRegion (identifier:'B9407F30-F5F8-466E-AFF9-25556B57FE6D', uuid:<__NSConcreteUUID 0x170229160> B9407F30-F5F8-466E-AFF9-25556B57FE6D, major:(null), minor:(null))
+2014-05-05 20:23:35.341 BeaconTester[614:60b] -[BeaconManager didChangeState:forRegion:] Inside region, START ranging for beacons
+2014-05-05 20:23:35.344 BeaconTester[614:60b] -[BeaconManager locationManager:didDetermineState:forRegion:] Location manager state Inside for region: CLBeaconRegion (identifier:'B9407F30-F5F8-466E-AFF9-25556B57FE6D', uuid:<__NSConcreteUUID 0x178220e20> B9407F30-F5F8-466E-AFF9-25556B57FE6D, major:(null), minor:(null))
+2014-05-05 20:23:35.345 BeaconTester[614:60b] -[BeaconManager didChangeState:forRegion:] Inside region, START ranging for beacons
+2014-05-05 20:23:36.354 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:23:36.358 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Immediate
+accuracy: 0.100000
+rssi: -56
+2014-05-05 20:23:36.361 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:23:36.364 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Immediate
+accuracy: 0.166810
+rssi: -60
+2014-05-05 20:23:37.354 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:23:37.357 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Immediate
+accuracy: 0.113493
+rssi: -57
+2014-05-05 20:23:37.359 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:23:37.361 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Immediate
+accuracy: 0.129635
+rssi: -58
+2014-05-05 20:23:38.352 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:23:38.356 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Immediate
+accuracy: 0.107364
+rssi: -56
+2014-05-05 20:23:38.358 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:23:38.360 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Immediate
+accuracy: 0.113603
+rssi: -57
+2014-05-05 20:23:39.369 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:23:39.380 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Immediate
+accuracy: 0.111684
+rssi: -57
+2014-05-05 20:23:39.383 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:23:39.386 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Immediate
+accuracy: 0.113633
+rssi: -57
+2014-05-05 20:23:40.353 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:23:40.356 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Immediate
+accuracy: 0.113642
+rssi: -57
+2014-05-05 20:23:40.362 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:23:40.364 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Immediate
+accuracy: 0.123250
+rssi: -58
+2014-05-05 20:23:41.354 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:23:41.361 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Immediate
+accuracy: 0.096271
+rssi: -55
+2014-05-05 20:23:41.363 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:23:41.365 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Immediate
+accuracy: 0.136575
+rssi: -59
+2014-05-05 20:23:42.354 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:23:42.358 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Immediate
+accuracy: 0.091427
+rssi: -55
+2014-05-05 20:23:42.361 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:23:42.364 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Immediate
+accuracy: 0.150769
+rssi: -60
+2014-05-05 20:23:43.358 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:23:43.362 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Immediate
+accuracy: 0.089685
+rssi: -55
+2014-05-05 20:23:43.364 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:23:43.367 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Immediate
+accuracy: 0.157393
+rssi: -60
+2014-05-05 20:23:44.354 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:23:44.361 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Immediate
+accuracy: 0.098680
+rssi: -57
+2014-05-05 20:23:44.363 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:23:44.366 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Immediate
+accuracy: 0.145604
+rssi: -58
+2014-05-05 20:25:28.638 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:25:28.638 BeaconTester[614:5c1b] __49-[AppDelegate registerforDeviceLockNotifications]_block_invoke ********************* DISPLAY OFF *********************
+2014-05-05 20:25:28.643 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Immediate
+accuracy: 0.103860
+rssi: -57
+2014-05-05 20:25:28.664 BeaconTester[614:5c1b] __49-[AppDelegate registerforDeviceLockNotifications]_block_invoke ********************* DISPLAY ON *********************
+2014-05-05 20:25:28.665 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:25:28.672 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Immediate
+accuracy: 0.139747
+rssi: -58
+2014-05-05 20:25:28.717 BeaconTester[614:60b] -[BeaconManager locationManager:didDetermineState:forRegion:] Location manager state Inside for region: CLBeaconRegion (identifier:'B9407F30-F5F8-466E-AFF9-25556B57FE6D', uuid:<__NSConcreteUUID 0x17803a120> B9407F30-F5F8-466E-AFF9-25556B57FE6D, major:(null), minor:(null))
+2014-05-05 20:25:28.725 BeaconTester[614:60b] -[BeaconManager didChangeState:forRegion:] Inside region, START ranging for beacons
+2014-05-05 20:25:28.733 BeaconTester[614:60b] -[BeaconManager locationManager:didDetermineState:forRegion:] Location manager state Inside for region: CLBeaconRegion (identifier:'B9407F30-F5F8-466E-AFF9-25556B57FE6D', uuid:<__NSConcreteUUID 0x1702246c0> B9407F30-F5F8-466E-AFF9-25556B57FE6D, major:(null), minor:(null))
+2014-05-05 20:25:28.748 BeaconTester[614:60b] -[BeaconManager didChangeState:forRegion:] Inside region, START ranging for beacons
+2014-05-05 20:25:29.748 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:25:29.749 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 5.274997
+rssi: -87
+2014-05-05 20:25:29.752 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:25:29.755 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 6.812921
+rssi: -89
+2014-05-05 20:25:30.748 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:25:30.750 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 5.274997
+rssi: -87
+2014-05-05 20:25:30.753 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:25:30.755 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 7.336922
+rssi: -90
+2014-05-05 20:25:31.749 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:25:31.752 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 5.546409
+rssi: -88
+2014-05-05 20:25:31.755 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:25:31.759 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 9.335587
+rssi: -96
+2014-05-05 20:25:32.750 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:25:32.755 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 5.235018
+rssi: -86
+2014-05-05 20:25:32.759 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:25:32.766 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 6.406212
+rssi: -84
+2014-05-05 20:25:33.748 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:25:33.752 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 4.886758
+rssi: -85
+2014-05-05 20:25:33.754 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:25:33.757 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 5.397928
+rssi: -84
+2014-05-05 20:25:34.751 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:25:34.754 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Unknown
+accuracy: -1.000000
+rssi: 0
+2014-05-05 20:25:34.757 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:25:34.759 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 4.893588
+rssi: -84
+2014-05-05 20:25:35.752 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:25:35.755 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 5.089447
+rssi: -88
+2014-05-05 20:25:35.757 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:25:35.759 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 5.153929
+rssi: -89
+2014-05-05 20:25:36.749 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:25:36.753 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 5.125055
+rssi: -87
+2014-05-05 20:25:36.756 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:25:36.759 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Far
+accuracy: 5.639112
+rssi: -93
+2014-05-05 20:25:37.749 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #0
+2014-05-05 20:25:37.752 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 52025
+minor: 46059
+proximity: Unknown
+accuracy: -1.000000
+rssi: 0
+2014-05-05 20:25:37.755 BeaconTester[614:60b] __34-[BeaconManager didDetectBeacons:]_block_invoke
+
+Beacon #1
+2014-05-05 20:25:37.757 BeaconTester[614:60b] -[BeaconManager debugBeacon:]
+uuid: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+major: 59801
+minor: 9446
+proximity: Far
+accuracy: 5.036839
+rssi: -86
