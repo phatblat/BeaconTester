@@ -7,63 +7,67 @@
 //
 
 #import "AppDelegate.h"
+#import <notify.h>
 
-//
-// Private notification API usage
-//
-// http://stackoverflow.com/questions/14229955/is-there-a-way-to-check-if-the-ios-device-is-locked-unlocked#answer-14271472
-// http://stackoverflow.com/questions/14352228/is-there-a-away-to-detect-the-event-when-ios-device-goes-to-sleep-mode-when-the#answer-14357568
-//
-static void displayStatusChanged(CFNotificationCenterRef center, void *observer, CFStringRef name, const void *object, CFDictionaryRef userInfo)
+NSString *const NotificationNameDidChangeDisplayStatus  = @"com.apple.iokit.hid.displayStatus";
+
+@interface AppDelegate ()
 {
-    NSString *notifcationName = (__bridge NSString *)name;
-    NSLog(@"Darwin notification NAME = %@",name);
-
-    if ([notifcationName isEqualToString:@"com.apple.springboard.lockstate"]) {
-        NSLog(@"LOCK STATUS CHANGED");
-    }
-    else if ([notifcationName isEqualToString:@"com.apple.springboard.lockcomplete"]) {
-        // the "com.apple.springboard.lockcomplete" notification will always come after the "com.apple.springboard.lockstate" notification
-        NSLog(@"DEVICE LOCKED");
-    }
-    else if ([notifcationName isEqualToString:@"com.apple.springboard.hasBlankedScreen"]) {
-        NSLog(@"screen has either gone dark, or been turned back on!");
-    }
+    int _notifyTokenForDidChangeDisplayStatus;
 }
+
+@property (nonatomic, assign, getter = isDisplayOn) BOOL displayOn;
+@property (nonatomic, assign, getter = isRegisteredForDarwinNotifications) BOOL registeredForDarwinNotifications;
+
+@end
 
 @implementation AppDelegate
 
 #pragma mark - Private Methods
 
-- (void)registerforDeviceLockNotifications
+//
+// Private notification API usage - used to log when the screen is on vs. off
+//
+// http://stackoverflow.com/questions/14229955/is-there-a-way-to-check-if-the-ios-device-is-locked-unlocked#answer-18636057
+//
+- (void)registerForDeviceLockNotifications
 {
-    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), //center
-                                    NULL, // observer
-                                    displayStatusChanged, // callback
-                                    CFSTR("com.apple.springboard.lockstate"), // event name
-                                    NULL, // object
-                                    CFNotificationSuspensionBehaviorDeliverImmediately);
+    __weak AppDelegate *weakSelf = self;
 
-    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), //center
-                                    NULL, // observer
-                                    displayStatusChanged, // callback
-                                    CFSTR("com.apple.springboard.lockcomplete"), // event name
-                                    NULL, // object
-                                    CFNotificationSuspensionBehaviorDeliverImmediately);
+    uint32_t result = notify_register_dispatch(NotificationNameDidChangeDisplayStatus.UTF8String,
+                                               &_notifyTokenForDidChangeDisplayStatus,
+                                               dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0l),
+                                               ^(int info) {
+                                                   __strong AppDelegate *strongSelf = weakSelf;
 
-    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), //center
-                                    NULL, // observer
-                                    displayStatusChanged, // callback
-                                    CFSTR("com.apple.springboard.hasBlankedScreen"), // event name
-                                    NULL, // object
-                                    CFNotificationSuspensionBehaviorDeliverImmediately);
+                                                   if (strongSelf)
+                                                   {
+                                                       uint64_t state;
+                                                       notify_get_state(_notifyTokenForDidChangeDisplayStatus, &state);
+
+                                                       strongSelf.displayOn = (BOOL)state;
+
+                                                       if (strongSelf.displayOn) {
+                                                           NSLog(@"********************* DISPLAY ON *********************");
+                                                       } else {
+                                                           NSLog(@"********************* DISPLAY OFF *********************");
+                                                       }
+                                                   }
+                                               });
+    if (result != NOTIFY_STATUS_OK)
+    {
+        self.registeredForDarwinNotifications = NO;
+        return;
+    }
+
+    self.registeredForDarwinNotifications = YES;
 }
 
 #pragma mark - UIApplicationDelegate Protocol
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [self registerforDeviceLockNotifications];
+    [self registerForDeviceLockNotifications];
 
     return YES;
 }
