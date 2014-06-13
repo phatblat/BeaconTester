@@ -48,6 +48,15 @@
         if ([CLLocationManager isRangingAvailable]) {
             [self setupBeaconRegions];
             [self startMonitoringRegions];
+
+            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appWillResignActive:)
+                                                         name:UIApplicationWillResignActiveNotification object:nil];
+            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appDidEnterBackgroud:)
+                                                         name:UIApplicationDidEnterBackgroundNotification object:nil];
+            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appWillEnterForeground:)
+                                                         name:UIApplicationWillEnterForegroundNotification object:nil];
+            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appDidBecomeActive:)
+                                                         name:UIApplicationDidBecomeActiveNotification object:nil];
         } else {
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Device Not Compatible"
                                                                 message:@"This app requires a device which supports Bluetooth Low Energy."
@@ -56,6 +65,39 @@
         }
     }
     return self;
+}
+
+#pragma mark - Notification Handlers
+
+- (void)appWillResignActive:(NSNotification *)notification
+{
+    NSLog(@"appWillResignActive");
+}
+
+- (void)appDidEnterBackgroud:(NSNotification *)notification
+{
+    NSLog(@"appDidEnterBackgroud");
+
+    __block UIBackgroundTaskIdentifier backgroundTaskIdentifier = [[UIApplication sharedApplication] beginBackgroundTaskWithName:@"beaconRanging" expirationHandler:^{
+        NSLog(@"Background task time has expired.");
+        [[UIApplication sharedApplication] endBackgroundTask:backgroundTaskIdentifier];
+        backgroundTaskIdentifier = UIBackgroundTaskInvalid;
+    }];
+
+    [self.beaconRegions enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        CLBeaconRegion *region = obj;
+        [self.locationManager startRangingBeaconsInRegion:region];
+    }];
+}
+
+- (void)appWillEnterForeground:(NSNotification *)notification
+{
+    NSLog(@"appWillEnterForeground");
+}
+
+- (void)appDidBecomeActive:(NSNotification *)notification
+{
+    NSLog(@"appDidBecomeActive");
 }
 
 #pragma mark - Beacon Setup
@@ -78,18 +120,18 @@
     //
     NSArray *supportedProximityUUIDs = @[
                                          // AirLocate Example App
-                                         [[NSUUID alloc] initWithUUIDString:@"E2C56DB5-DFFB-48D2-B060-D0F5A71096E0"], // unflashed KST major 33, minor 1,2
-                                         [[NSUUID alloc] initWithUUIDString:@"5A4BCFCE-174E-4BAC-A814-092E77F6B7E5"],
-                                         [[NSUUID alloc] initWithUUIDString:@"74278BDA-B644-4520-8F0C-720EAF059935"],
-
-                                         // KST Particles
-                                         [[NSUUID alloc] initWithUUIDString:@"8AEFB031-6C32-486F-825B-E26FA193487D"], // flashed (b010?) KST major 1, minor 1
-                                         [[NSUUID alloc] initWithUUIDString:@"4C56C69A-D494-4DEE-AEFE-7E064803ECEE"],
-                                         [[NSUUID alloc] initWithUUIDString:@"C75581A3-D1C6-4648-A9AC-F8F85F361D54"],
-                                         [[NSUUID alloc] initWithUUIDString:@"76630532-774C-4641-BA52-E854107E4ADD"],
-
-                                         // BlueCats
-                                         [[NSUUID alloc] initWithUUIDString:@"DDBFBA71-9C58-4B5F-BE23-E5FDEEF11EF4"],
+//                                         [[NSUUID alloc] initWithUUIDString:@"E2C56DB5-DFFB-48D2-B060-D0F5A71096E0"], // unflashed KST major 33, minor 1,2
+//                                         [[NSUUID alloc] initWithUUIDString:@"5A4BCFCE-174E-4BAC-A814-092E77F6B7E5"],
+//                                         [[NSUUID alloc] initWithUUIDString:@"74278BDA-B644-4520-8F0C-720EAF059935"],
+//
+//                                         // KST Particles
+//                                         [[NSUUID alloc] initWithUUIDString:@"8AEFB031-6C32-486F-825B-E26FA193487D"], // flashed (b010?) KST major 1, minor 1
+//                                         [[NSUUID alloc] initWithUUIDString:@"4C56C69A-D494-4DEE-AEFE-7E064803ECEE"],
+//                                         [[NSUUID alloc] initWithUUIDString:@"C75581A3-D1C6-4648-A9AC-F8F85F361D54"],
+//                                         [[NSUUID alloc] initWithUUIDString:@"76630532-774C-4641-BA52-E854107E4ADD"],
+//
+//                                         // BlueCats
+//                                         [[NSUUID alloc] initWithUUIDString:@"DDBFBA71-9C58-4B5F-BE23-E5FDEEF11EF4"],
 
                                          // Estimote
                                          [[NSUUID alloc] initWithUUIDString:@"B9407F30-F5F8-466E-AFF9-25556B57FE6D"],
@@ -120,10 +162,20 @@
  */
 - (void)startRanging
 {
+    __block UIBackgroundTaskIdentifier backgroundTaskIdentifier = [[UIApplication sharedApplication] beginBackgroundTaskWithName:@"beaconRanging" expirationHandler:^{
+        NSLog(@"Background task time has expired.");
+        [[UIApplication sharedApplication] endBackgroundTask:backgroundTaskIdentifier];
+        backgroundTaskIdentifier = UIBackgroundTaskInvalid;
+    }];
+
     [self.beaconRegions enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         CLBeaconRegion *region = obj;
         [self.locationManager startRangingBeaconsInRegion:region];
     }];
+
+//    NSLog(@"Background task completed successfully.");
+//    [application endBackgroundTask:self.backgroundTaskIdentifier];
+//    self.backgroundTaskIdentifier = UIBackgroundTaskInvalid;
 }
 
 #pragma mark - CLLocationManagerDelegate (Region Monitoring)
@@ -245,19 +297,24 @@
         [self debugBeacon:obj];
     }];
 
+    [self debugAppState:[UIApplication sharedApplication].applicationState];
+
     if ([UIApplication sharedApplication].applicationState == UIApplicationStateBackground) {
-        // Local notifications
-        UILocalNotification *notification = [[UILocalNotification alloc] init];
-        notification.fireDate = [NSDate date];
-        notification.timeZone = [NSTimeZone defaultTimeZone];
-        notification.alertBody = message;
-        notification.userInfo = @{ @"notification" : @"contracted" };
-        [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+        CLBeacon *beacon = [beacons firstObject];
+        if (beacon.rssi > -70) {
+            // Local notifications
+            UILocalNotification *notification = [[UILocalNotification alloc] init];
+            notification.fireDate = [NSDate date];
+            notification.timeZone = [NSTimeZone defaultTimeZone];
+            notification.alertBody = @"GET OFF MY LAWN!!!";
+            notification.userInfo = @{ @"notification" : @"contracted" };
+            [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+        }
     } else {
         // Present alert
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:message
-                                                           delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        [self presentAlert:alertView];
+//        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:message
+//                                                           delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+//        [self presentAlert:alertView];
     }
 }
 
@@ -288,6 +345,25 @@
     NSLog(@"\nuuid: %@\nmajor: %ld\nminor: %ld\nproximity: %@\naccuracy: %f\nrssi: %ld",
           uuid, [major longValue], [minor longValue], proximityString, accuracy, (long)rssi);
 #endif
+}
+
+- (void)debugAppState:(UIApplicationState)appState
+{
+    switch (appState) {
+        case UIApplicationStateActive:
+            NSLog(@"app state: active");
+            break;
+        case UIApplicationStateInactive:
+            NSLog(@"app state: inactive");
+            break;
+        case UIApplicationStateBackground:
+            NSLog(@"app state: background");
+            break;
+
+        default:
+            NSLog(@"app state: unknown: %ld", (long)appState);
+            break;
+    }
 }
 
 @end
