@@ -69,6 +69,8 @@ NSString *const NotificationNameDidChangeDisplayStatus  = @"com.apple.iokit.hid.
 {
     [self registerForDeviceLockNotifications];
 
+    [application cancelAllLocalNotifications];
+
     return YES;
 }
 							
