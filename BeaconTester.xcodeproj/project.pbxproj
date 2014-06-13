@@ -483,6 +483,7 @@
 				B5D86402190EABB0005657B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5D86403190EABB0005657B4 /* Build configuration list for PBXNativeTarget "BeaconTesterTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +492,7 @@
 				B5D86405190EABB0005657B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
